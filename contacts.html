@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./Sachimo.css">
+    <script src="./Sachimo.js"defer></script>
+    <style>
+        label{
+            display:flex;
+             margin-left:300px;
+             margin-bottom:30px;
+           
+        }
+        textarea{
+            width:300px;
+            height:200px;
+            margin-left:300px;
+            
+        }
+
+        input, textarea{
+            outline:none;
+            background-color:#ececf1;
+        }
+        input:focus, textarea:focus{
+            
+            background-color:rgb(245, 226, 243);
+        }
+
+        section{
+             display:inline-block;
+             
+        }
+        #checkBox{
+            margin-left:300px;
+            margin-bottom:30px;
+            display:inline-block;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1><a href="./Sachimo.html">Sachi Goto</a></h1>
+        <nav>
+            <ul>
+                <li class="list"><a href="./Background.html">My Background</a></li>
+                <li class="list"><a href="./Hobbies.html">My Hobbies</a></li>
+                <li class="list"><a href="./movies.html">Movies</a></li>
+                <li class="list"><a href="./contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <label>Full Name: <input type = "text" name = "name" class="textBox" id="name"></label>
+            <label>Email address: <input type = "email" name = " email" class="textBox"></label>
+            <label>Phone Number:<input type="text" name="phoneNumber" class="textBox"></label>
+            <div id="checkBox">
+            <section> <input type = "checkbox" name = "contact1" value ="Bike" class="textBox"> Contact me via email </section>
+            <section>
+            <input type = "checkbox" name = "contact2" value= "Bike" class="textBox"> Contact me via phone</label>
+            </section>
+            </div>
+            <lable><textarea name="message" placeholder="Write a message!" class="textBox"></textarea></lable>
+            <label><input type="button" value ="Submit" id="submit"></label>
+            <p id="message"></p>
+    </fieldset>
+    </form>
+
+    </main>
+</body>
+</html>
