@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachi Goto</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/9b13b3eb3d.js" crossorigin="anonymous"></script>
+    <style>
+     
+        label{
+            width:30%;
+            display:inline-block;
+            padding:20px;
+        }
+
+        #textarea{
+            width:500px;
+            height:300px;
+
+        }
+        #message{
+            margin-bottom:50px;
+            margin-top:50px;
+        }
+
+        fieldset{
+            margin-left:10%;
+            margin-right:10%;
+            padding-left:50px;
+            padding-bottom:100px;
+            /* border-color:#d8c7cc; */
+            border:5px solid #d8c7cc;
+        }
+        form{
+            position:relative;
+        }
+        #leaves{
+            float:right;
+            position:absolute;
+            top:70%;
+            left:80%;
+            border-radius:10% 60% 10% 60% ;
+        }
+        main{
+            height:1000px;
+        }
+       
+        
+    </style>
+
+</head>
+<body>
+    <header>
+    
+        <div id="banner">
+            <div class="flex">
+            <img src="./img/logo.png" alt="logo" width="80" height="80">
+            <h1><a href="./index.html">Sachi Goto</a></h1>
+            </div>
+            <div>
+                <ul id="logoUl">
+                    <li><a href="https://ca.linkedin.com/in/sachi-goto-33580a215" target="_blank"> <i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/SachiGoto" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="mailto:sgoto01@mylangara.ca" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+    
+            </div>
+            </div>
+            <nav>
+                <ul>
+                    <li class="list"><a href="./index.html">Home</a></li>
+                    <li class="list"><a href="./background.html">Background/Interests</a>
+                        <ul>
+                            <li><a href="./background.html">Background</a></li>
+                            <li><a href="./background.html#hobbies">Interests</a></li>
+                        </ul>
+                    </li>
+                    <li class="list"><a href="./work_experience.html">Work Experience</a></li>
+                    <li class="list"><a href="./education.html">Education/Certifications</a>
+                        <ul>
+                            <li><a href="./education.html">Education</a></li>
+                            <li><a href="./education.html#certifications">Certifications</a></li>
+                        </ul></li>
+                    <li class="list"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <form  method="post"  
+       action="https://webdevbasics.net/scripts/demo.php">
+            <fieldset>
+                <legend>Contact Form</legend>
+            <label for="name">Full Name:</label>
+            <input type = "text" name = "name" id="name"><br>
+
+            <label for ="email">Email address:</label>
+            <input type = "email" name = "email" id="email"><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" name="phoneNumber" id="phone"><br>
+
+          
+            <input type = "checkbox" name = "contact1" value ="contact1" id="contact1"> 
+            <label for="contact1">Contact me via email </label>
+            
+            <input type = "checkbox" name = "contact2" value= "contact1" id="contact2">
+            <label for="contact2">Contact me via phone</label><br>
+            
+            <textarea  id="textarea" name="message" placeholder="Write a message!" maxlength="200"></textarea><br>
+
+            <button type="submit" value ="Submit" id="submit">Submit</button><br>
+            
+            <p id="message"></p>
+            </fieldset>
+            <img id="leaves" src="./img/f8151a7aea563ce12aaa210be7587b14.jpeg" alt="leaves" width="150">
+            
+            
+
+         </form>
+    </main>
+    <script>
+        let submission = document.getElementById("submit");
+        let userName = document.getElementById("name");
+
+         submission.addEventListener("click", blank);
+
+         function blank(e){
+    //  e.preventDefault();        
+     document.getElementById("message").innerHTML="Thank you for sending me a message, " + "" + userName.value + "!";
+}
+    </script>
+</body>
+</html>

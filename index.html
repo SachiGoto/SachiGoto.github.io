@@ -3,77 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Second-year student at Langara College. I am currently studying computer science and have taken several online courses focusing on web-based languages, including HTML, CSS & JavaScript. Keen to develop my programming skills, I am interested in opportunities specifically related to web development and design, as this is the industry in which I would like to develop a career.">
     <title>Sachi Goto</title>
-    <link rel="stylesheet" href="./Sachimo.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/9b13b3eb3d.js" crossorigin="anonymous"></script>
     <style>
         .section2{
             padding-left:10px;
         }
       
-       article{
-           margin-bottom:10px;
+       .section1{
+           margin-top:-28px;
        }
 
-       ul{
-           list-style-type:disc;
+       img{
+           border-radius:5px;
        }
-       p{
-           margin-bottom:10px;
-       }
-       .courseName{
-           color:rgb(24, 61, 97);
-           font-weight:bold;
-       }
+       
     </style>
+
     
 </head>
 <body>
+
     <header>
+        <div id="banner">
+        <div class="flex">
+        <img src="./img/logo.png" alt="logo" width="80" height="80">
         <h1><a href="./index.html">Sachi Goto</a></h1>
+        </div>
+        <div>
+            <ul id="logoUl">
+                <li><a href="https://ca.linkedin.com/in/sachi-goto-33580a215" target="_blank"> <i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/SachiGoto" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="mailto:sgoto01@mylangara.ca"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+
+        </div>
+        </div>
         <nav>
             <ul>
-                <li class="list"><a href="./Background.html">My Background</a></li>
-                <li class="list"><a href="./Hobbies.html">My Hobbies</a></li>
-                <li class="list"><a href="./movies.html">Movies</a></li>
-                <li class="list"><a href="./contacts.html">Contacts</a></li>
+                <li class="list"><a href="./index.html">Home</a></li>
+                <li class="list"><a href="./background.html">Background/Interests</a>
+                    <ul>
+                        <li><a href="./background.html">Background</a></li>
+                        <li><a href="./background.html#hobbies">Interests</a></li>
+                    </ul>
+                </li>
+                <li class="list"><a href="./work_experience.html">Work Experience</a></li>
+                <li class="list"><a href="./education.html">Education/Certifications</a>
+                    <ul>
+                        <li><a href="./education.html">Education</a></li>
+                        <li><a href="./education.html#certifications">Certifications</a></li>
+                    </ul></li>
+                <li class="list"><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
+       
+       
     </header>
 
     <main>
-        <div>
-            <section class="section1">
-                <article>
-                <p>Hi! My name is Sachi Goto. I have been teaching myself coding on and off for about 1 year. 
+        <div class="flex">
+            <div class="section1">
+               
+                
+                <p>Hi! My name is Sachi Goto. I am a
+                    Second-year student at Langara College. I am currently studying computer science and have taken several online courses focusing on web-based languages, including HTML, CSS & JavaScript. Keen to develop my programming skills, I am interested in opportunities specifically related to web development and design, as this is the industry in which I would like to develop a career.
                 </p>
-                </article>
-                 <article>
-                 <p class="courseName">Completed courses</p>
-                 <p>Coursera:Web Design for Everybody: Basics of Web Development & Coding Specialization</p>
-                 <ul>
-                     <li>
-                        Introduction to HTML5 
-                     </li>
-                     <li>
-                         Introduction to CSS3
-                     </li>
-                     <li>
-                         Interactivity with JavaScript
-                     </li>
-                 </ul>
-                 </article>
-                </article>
-                 <p class="courseName">Courses in progress</p>
-                 <ul>
-                 <li>SkillShare:Responsive Web Design Essentials-HTML5 CSS3 Bootstrap by Daniel Scott</li>
-                 </ul>
-                </article>
+               
+              
                  
-            </section>
-            <section class="section2">
+            </div>
+            <div class="section2">
                 <img style = "width:100%; height:auto;" src="./img/lavender.webp" alt="lavender">
-            </section>
+            </div>
         </div>
+        
 
     </main>
         
