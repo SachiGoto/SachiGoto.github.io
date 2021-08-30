@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachi Goto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9b13b3eb3d.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            height:10000px;
+        }
+        #background1{
+            margin-bottom:160px;
+            display:flex;
+        }
+         /* .img:hover {
+            transform: scale(1.5);
+         } */
+
+        .img{
+            /* transition:transform 2s; */
+            border-radius:20px;   
+        }
+
+        #movieGalleryContainer{
+            position:relative;
+        }
+
+
+        #movieGallery section{
+            display:none;
+        }
+    
+        #movieGallery li:hover section{
+            display:flex;
+            position:absolute;
+            top:300px;
+            left:10%;
+        }
+    
+        #movieGallery{
+            margin-top:20px;
+            list-style-type:none;
+            display:flex;
+            justify-content:space-around;
+        }
+
+        .galleryContent{
+            margin-left:30px;
+        }
+        .gallerySection{
+            display:flex;
+        }
+   
+        section{
+            margin-right:30px;
+        }
+       
+        #title{
+            padding:50px 0px 0px 10px;
+            margin-bottom:0px;
+            display:flex;
+        }
+        .title{
+            width:30%;
+        }
+
+        .hobbies{
+            margin-bottom:100px;
+            display:flex;
+        }
+
+        #img {
+            width: 350px;
+            height:350px;
+            object-fit: cover;
+        }
+        #muffin{
+            margin-top:50px;
+        }
+      
+            
+    </style>
+</head>
+<body>
+    <header>
+        <div id="banner">
+            <div class="flex">
+            <img src="./img/logo.png" alt="logo" width="80" height="80">
+            <h1><a href="./index.html">Sachi Goto</a></h1>
+            </div>
+            <div>
+                <ul id="logoUl">
+                    <li><a href="https://ca.linkedin.com/in/sachi-goto-33580a215" target="_blank"> <i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/SachiGoto" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="mailto:sgoto01@mylangara.ca" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+    
+            </div>
+        </div>
+            <nav>
+                <ul>
+                    <li class="list"><a href="./index.html">Home</a></li>
+                    <li class="list"><a href="./background.html">Background/Interests</a>
+                        <ul>
+                            <li><a href="./background.html">Background</a></li>
+                            <li><a href="./background.html#hobbies">Interests</a></li>
+                        </ul>
+                    </li>
+                    <li class="list"><a href="./work_experience.html">Work Experience</a></li>
+                    <li class="list"><a href="./education.html">Education/Certifications</a>
+                        <ul>
+                            <li><a href="./education.html">Education</a></li>
+                            <li><a href="./education.html#certifications">Certifications</a></li>
+                        </ul></li>
+                    <li class="list"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    
+    </header>
+    <main id="bgpage">
+        <div  id="background1">
+           <div>
+                <h3 id="background">My Background</h3>
+                <p>I am originally from Japan and I have been in Canada for more than 10 years. I enjoy the diversity in Vancouver. I feel privileged to get to enjoy food from all over the world. Since I came to Canada, I have spent the majority of my time in Vancouver. However, I have lived in Abbotsford, Surrey as well as Calgary and Edmonton in Alberta. I am very interested in visiting other parts of Canada. </p>
+              
+           </div>
+
+           <div>
+            <figure>
+            <img class="img"  src="./img/luc-tribolet-FQRxB1SimfI-unsplash.jpg" alt="stanley park" width="250">
+            <figcaption>Stanley Park</figcaption>
+            </figure>
+        </div>
+
+        </div>
+            <h3 id="hobbies">My Interests</h3>
+      
+            <div class="hobbies">
+                <div class="section1">   
+                    <h4>Food</h4>
+                    <p>  I enjoy going out to eat. There are many restaurants I like. One of my go-to restaurants is a Vietnamese restaurant called <a href = "https://www.facebook.com/eatdochay"> Do Chay</a></p> Since I am more interested in vegetarian diet, vegetarian-friendly restaurants like Do Chay are the places I go often. 
+                   
+                </div>
+                <div class="section2">
+                    <img id="img" src="dochay.png" alt="food">  
+                    <p id="figcaption"></p>
+                </div>
+            </div>
+
+            <div class="hobbies">
+                <div class="section1"> 
+                    <h4>Plants</h4>
+                    <p>Another hobby of mine is collecting plants. It is rather a new hobby of mine. Now I have five plants to look after and I am expecting to get more.</p> 
+                </div>
+                <div class="section2">
+                    <img class="img" src ="./img/plants.jpeg"  width="200" alt ="Plants">   
+                </div>
+            </div>
+
+
+            <div class="hobbies">
+                <div class="section1">
+                    <h4>Baking</h4>
+                    <p>In my spare time, I enjoy baking. Since I used to be a baker back in Japan, baking reminds me of the time in Japan. I also enjoy sharing baking goods I baked with my friends. </p>
+                </div>
+                 <div class="section2">
+                     <img class="img" src="./img/muffins.jpeg"  alt="muffins" width="200">
+                     <p id="muffin">muffins that I baked recently. These are banana chocolate muffins with brandy.</p>
+                 </div>
+            </div>
+
+            <div>
+                <h4>Movies</h4>
+                <p>I enjoy watching movies and tv shows as most people do. Here is my best 3 all time favorite movies.</p>
+            </div>
+
+            <div id="title">
+                <p class="title">Green Book</p>
+                <p class="title">Spirited Away</p>
+                <p class="title">Amelie</p>
+            </div>
+                
+                
+            <div id="movieGalleryContainer">
+                <ul id="movieGallery">
+                    <li class="movieGalleryList"><img src="./img/greenbook.jpeg" alt="green book" width="160" ><section class="gallerySection"> 
+                        <div><img src="./img/greenbook.jpeg" alt="green book" width="400"></div>
+                        <div class="galleryContent"><h5>Plot Summary</h5><p>"In 1962, Tony "Tony Lip" Vallelonga, a tough bouncer, is looking for work when his nightclub is closed for renovations. The most promising offer turns out to be the driver for the African-American classical pianist Don Shirley for a concert tour into the Deep South states. Although hardly enthused at working for a black man, Tony accepts the job and they begin their trek armed with The Negro Motorist Green Book, a travel guide for safe travel through America's racial segregation. Together, the snobbishly erudite pianist and the crudely practical bouncer can barely get along with their clashing attitudes to life and ideals. However, as the disparate pair witness and endure America's appalling injustices on the road, they find a newfound respect for each other's talents and start to face them together. In doing so, they would nurture a friendship and understanding that would change both their lives."(as cited in IMDb website)</p><a href="https://www.youtube.com/watch?v=QkZxoko_HC0">Click here to watch Green Book official trailer</a></div></section>
+                    </li>
+
+                    <li class="movieGalleryList"><img src="./img/spiritedAway.jpeg" alt="spirited away" width="160"><section><div><img src="./img/spiritedAway.jpeg" alt="spirited away" width="400" ></div>
+                        <div class="galleryContent"><h5>Plot Summary</h5><p>"Chihiro and her parents are moving to a small Japanese town in the countryside, much to Chihiro's dismay. On the way to their new home, Chihiro's father makes a wrong turn and drives down a lonely one-lane road which dead-ends in front of a tunnel. Her parents decide to stop the car and explore the area. They go through the tunnel and find an abandoned amusement park on the other side, with its own little town. When her parents see a restaurant with great-smelling food but no staff, they decide to eat and pay later. However, Chihiro refuses to eat and decides to explore the theme park a bit more. She meets a boy named Haku who tells her that Chihiro and her parents are in danger, and they must leave immediately. She runs to the restaurant and finds that her parents have turned into pigs. In addition, the theme park turns out to be a town inhabited by demons, spirits, and evil gods. At the center of the town is a bathhouse where these creatures go to relax. The owner of the bathhouse is the evil witch Yubaba, who is intent on keeping all trespassers as captive workers, including Chihiro. Chihiro must rely on Haku to save her parents in hopes of returning to their world."(as cited in IMDb website)</p><a href="https://www.imdb.com/title/tt0245429/plotsummary">Click here for more details about the movie</a></div></section>
+                    </li>
+
+
+                    <li class="movieGalleryList"><img src="./img/amelie.jpg" alt="amelie" width="160"><section><div><img src="./img/amelie.jpg" alt="amelie" width="400"></div>
+                        <div class="galleryContent"><h5>Plot Summary</h5><p>"Amélie is a story about a girl named Amélie whose childhood was suppressed by her Father's mistaken concerns of a heart defect. With these concerns Amélie gets hardly any real-life contact with other people. This leads Amélie to resort to her own fantastical world and dreams of love and beauty. She later on becomes a young woman and moves to the central part of Paris as a waitress. After finding a lost treasure belonging to the former occupant of her apartment, she decides to return it to him. After seeing his reaction and his new found perspective - she decides to devote her life to the people around her. Such as, her father who is obsessed with his garden-gnome, a failed writer, a hypochondriac, a man who stalks his ex girlfriends, the "ghost," a suppressed young soul, the love of her life and a man whose bones are as brittle as glass. But after consuming herself with these escapades - she finds out that she is disregarding her own life and damaging her quest for love. Amélie then discovers she must become more aggressive and take a hold of her life and capture the beauty of love she has always dreamed of."(as cited in IMDb website)</p><a href="https://www.youtube.com/watch?v=HUECWi5pX7o">Click here to watch a trailer Amelie</a></div></section>
+                    </li>
+                </ul>
+            </div>
+   
+                
+        
+    </main>
+
+<script>
+
+   let timer = "time";
+    function start(){
+        if(timer == "time"){
+       timer = setInterval(changeImages,3000);
+        }
+    }
+    
+    let doChay = "doChay.png";
+    let raisu = "raisu.png";
+    let jamCafe = "jamCafe.png";
+    let imageTracker = "doChay";  
+    let imageStyle = document.getElementById("img").style.borderRadius = "30px";
+    
+    function changeImages(){
+
+        if(imageTracker == "doChay"){
+            document.getElementById("img").setAttribute("src",raisu);
+            document.getElementById("img").style.borderRadius = "30px";
+            document.getElementById("figcaption").innerHTML = "Raisu";
+            
+            imageTracker = "raisu";
+        }else if(imageTracker == "raisu"){
+            
+            document.getElementById("img").setAttribute("src",jamCafe);
+            document.getElementById("img").style.borderRadius = "30px";
+            document.getElementById("figcaption").innerHTML = "JamCafe";
+            imageTracker = "jamCafe"
+        }else if(imageTracker =="jamCafe"){
+           
+            document.getElementById("img").setAttribute("src",doChay);
+            document.getElementById("img").style.borderRadius = "30px";
+            document.getElementById("figcaption").innerHTML = "Do Chay";
+            imageTracker = "doChay";
+    }    
+}
+
+    start();
+</script>
+    
+</body>
+</html>
